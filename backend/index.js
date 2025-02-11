@@ -9,7 +9,9 @@ dotenv.config();
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
-
+app.use(cors({
+  origin: 'https://for-her-2619.vercel.app'
+}));
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI);
 
