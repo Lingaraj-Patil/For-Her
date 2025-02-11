@@ -143,7 +143,7 @@ function App() {
     }
 
     try {
-      const response = await axios.post('https://for-her-fszo.vercel.app/save-name', { name });
+      const response = await axios.post('https://for-her-fszo.vercel.app/api/names', { name });
       if (response.status === 201) {
         setNameSubmitted(true);
       }
