@@ -8,11 +8,10 @@ const app = express();
 dotenv.config();
 // Middleware
 app.use(bodyParser.json());
-app.use(cors());
 app.use(cors({
-  origin: 'https://for-her-2619.vercel.app',
-  methods: ["POST","GET"],
-  credentials: true,
+    origin: 'https://for-her-2619.vercel.app',
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type']
 }));
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI);
