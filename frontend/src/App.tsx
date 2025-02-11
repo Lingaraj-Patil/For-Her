@@ -8,7 +8,6 @@ import ishqHein from "./assets/Ishq-Hai-Ye-Ishq-Hai-Ringtone-iRingZone.com_.mp3"
 import abhiNaJao from "./assets/Abhi Na Jao Chhod Kar - Hum Dono (1962) 320 Kbps.mp3";
 import iThinkThey from "./assets/i-think-they-call-this-love-oldringtones.net.mp3";
 import axios from 'axios';
-import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [name, setName] = useState('');
@@ -481,7 +480,6 @@ function App() {
           </div>
         </div>
       </footer>
-      <Analytics/>
     </div>
   );
 }
